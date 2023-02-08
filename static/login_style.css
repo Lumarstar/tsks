@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&family=Roboto:wght@900&display=swap&family=Nunito:wght@900&display=swap');
+
+body {
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    background: rgb(29,30,38);
+    color: rgb(128, 128, 145);
+}
+
+.header {
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: rgb(254,253,255);
+    margin-bottom: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 85vh;
+    flex-direction: column;
+}
+
+input {
+    background-color: inherit;
+    border: 2px solid rgb(43,43,54);
+    border-radius: 8px;
+    padding: 5px 10px;
+    margin: 2px auto;
+    font: inherit;
+    color:rgba(255, 255, 255, 0.774);
+}
+
+input:hover {
+    border-color: rgb(66, 66, 79);
+}
+
+button[type='submit']{
+    background-image: linear-gradient(to top right, rgb(223,90,191), rgb(239,143,155));
+    border: transparent;
+    border-bottom: 2px solid rgb(190, 57, 159);
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.774);
+    font: inherit;
+    padding: 5px 85px;
+    margin: 5px auto;
+    margin-top: 10px;
+    transition: 0.2s ease-in-out;
+}
+
+button[type='submit']:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+button[type='submit']:active {
+    transform: scale(1);
+    cursor: pointer;
+}
+
+footer {
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+a {
+    text-decoration: none;
+    color:rgba(255, 255, 255, 0.774);
+    font-weight: bold;
+    position: relative;
+}
+
+/* underline effect of link */
+/* from https://css-tricks.com/css-link-hover-effects/ */
+
+a::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.774);
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.footer {
+    margin: 10px auto;
+}
